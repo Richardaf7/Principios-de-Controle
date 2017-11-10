@@ -39,7 +39,7 @@ sempre a temperatura do sensor, com base nessa leitura, fazer o controle do cool
 mesmo ter diferentes velocidade de rotação, assim tendo um maior controle da temperatura
 desejada.
 
-Funcionamento
+      Funcionamento
       #include &lt;dht.h&gt; //Inclusão da biblioteca do sensor de temperatura
 
       #define dhtpin A1 // pino a1 como leitor de temperatura do sensor
