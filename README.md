@@ -1,8 +1,7 @@
 INTRODUÇÃO:
 
-
   O projeto tem o objetivo geral de controlar a temperatura de qualquer coisa de forma
-inteligente, seja: um espaço físico, a temperatura de um motor a combustão, um refrigerador
+inteligente, seja: um espaço físico, a temperatura de um motor a combustão, um refrigerador,
 um forno etc.
   Muitos sistemas de controle de temperatura são mecânicos e sem inteligência, como é
 o exemplo do controle de temperatura de um motor a combustão, que depende de uma
@@ -12,31 +11,31 @@ repentina, correndo o risco de danos irreversíveis.
   O projeto aqui apresentado pode, por exemplo, substituir os sistemas mecânicos de
 veículos por um sistema inteligente que monitora em tempo real a temperatura do motor e
 pode, junto com outros dados obtidos por outros sensores, mostrar a quem conduz os veículos
-ou as fabricantes o melhor rendimento do motor.
+ou aos fabricantes o melhor rendimento do motor.
 
 Nesse projeto iremos utilizar a seguinte lista de materiais:
-  1-  Cooler, como função de atuador;
-  2-Sensor de temperatura (DHT11) e encoder do cooler;
-  3-ATMega328 (Arduíno UNO), como controlador;
-  4-Protoboard, Transistor, Cabos, Conectores e Fonte USB completam a lista de
+  1 - Cooler, como função de atuador;
+  2 - Sensor de temperatura (DHT11) e encoder do cooler;
+  3 - ATMega328 (Arduíno UNO), como controlador;
+  4 - Protoboard, Transistor, Cabos, Conectores e Fonte USB completam a lista de
     materiais.
     
 EMBASAMENTO TEÓRICO/PRÁTICO:
 
-Esquemático do projeto.
+Esquemático do projeto:
 
-Foram usadas portas analógicas e digitais do arduino para o sensor e atuador
-respectivamente, porem para o atuador a porta está em modo pwm. Na parte da
-alimentação foi usada a porta de 5v para o sensor e o cooler e um Gnd comum para
+ Foram usadas portas analógicas e digitais do arduino para o sensor e atuador,
+respectivamente, porém para o atuador, a porta está em modo pwm. Na parte da
+alimentação foi usada a porta de 5V para o sensor e o cooler e um GND comum para
 todos.
 
 IMPLEMENTAÇÃO:
 
-- Arduino: É uma plataforma de desenvolvimento de hardware, microcontrolada
+- Arduino: É uma plataforma de desenvolvimento de hardware, microcontrolada,
 usando um processador ATMega328 e sendo de código aberto, que em termos práticos, o
 Arduino é um pequeno computador em que é possível se interagir com o ambiente.
-No nosso projeto ele atua como controlador, implementado um código para aferir
-sempre a temperatura do sensor, com base nessa leitura, fazer o controle do cooler, fazendo o
+No nosso projeto ele atua como controlador, implementando um código para aferir
+sempre a temperatura do sensor, com base nessa leitura, faz o controle do cooler, fazendo o
 mesmo ter diferentes velocidade de rotação, assim tendo um maior controle da temperatura
 desejada.
 
