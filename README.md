@@ -57,13 +57,13 @@ desejada.
 de temperatura. Fazendo alteração na sua tensão, tem-se um melhor controle da sua
 velocidade.
 
-if (Temperatura > 21)
-{
-rotacao = 100; // define rotacao do motor
+      if (Temperatura > 21)
+      {
+      rotacao = 100; // define rotacao do motor
 
-analogWrite (vent,rotacao); // pwm na porta vent com a frequência
-da variável rotacao
-}
+      analogWrite (vent,rotacao); // pwm na porta vent com a frequência
+      da variável rotacao
+      }
 
 - Fonte USB: Alimentação do nosso projeto em si.
 - Encoder: Elementos ou equipamentos eletromecânicos para conversão de
