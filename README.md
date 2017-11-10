@@ -38,6 +38,7 @@ velocidade.
 if (Temperatura > 21)
 {
 rotacao = 100; // define rotacao do motor
+
 analogWrite (vent,rotacao); // pwm na porta vent com a frequência
 da variável rotacao
 }
