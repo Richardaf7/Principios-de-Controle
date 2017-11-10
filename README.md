@@ -63,6 +63,7 @@ sistema a ser aplicado.
 
 - O QUE SERIA NECESSÁRIO MELHORAR NO SEU PROJETO PARA QUE ISSO
 OCORRA?
+
   Dentro do nosso protótipo, usamos a plataforma Arduíno com Microcontrolador ATMega328 e
 um protoboard para ajudar nas ligações, porém, para colocarmos nosso produto disponível, será
 necessário projetarmos nosso própria placa com as devidas entrada dos componentes, incluindo o
