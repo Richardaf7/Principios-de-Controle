@@ -48,6 +48,7 @@ Sensor: DHT11, permitindo fazermos a leitura da temperatura para ser controlada.
 DHT.read11(dhtpin); //lê as informações do sensor
 
 CONCLUSÃO:
+  
   O projeto de Sensor de Temperatura, tem aplicações bem específicas e que não exija um
 alto nível de precisão, como um forno industrial ou até mesmo um motor a combustão (motor
 automotivo).
