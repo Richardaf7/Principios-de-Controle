@@ -19,9 +19,16 @@ Nesse projeto iremos utilizar a seguinte lista de materiais:
   3-ATMega328 (Arduíno UNO), como controlador;
   4-Protoboard, Transistor, Cabos, Conectores e Fonte USB completam a lista de
     materiais.
+    
 EMBASAMENTO TEÓRICO/PRÁTICO:
 
-- CONSTRUIR O ESQUEMÁTICO DO PROJETO
+Esquemático do projeto.
+
+Foram usadas portas analógicas e digitais do arduino para o sensor e atuador
+respectivamente, porem para o atuador a porta está em modo pwm. Na parte da
+alimentação foi usada a porta de 5v para o sensor e o cooler e um Gnd comum para
+todos.
+
 IMPLEMENTAÇÃO:
 
 - Arduino: É uma plataforma de desenvolvimento de hardware, microcontrolada
@@ -31,6 +38,15 @@ No nosso projeto ele atua como controlador, implementado um código para aferir
 sempre a temperatura do sensor, com base nessa leitura, fazer o controle do cooler, fazendo o
 mesmo ter diferentes velocidade de rotação, assim tendo um maior controle da temperatura
 desejada.
+
+Funcionamento
+#include &lt;dht.h&gt; //Inclusão da biblioteca do sensor de temperatura
+#define dhtpin A1 // pino a1 como leitor de temperatura do sensor
+#define vent 9 // pino 9 como clock do pwn do ventilador
+float Temperatura = 0; // variavel que armazena temperatura do sensor
+int rotacao = 0; // variavel que armazena a rotacao do motor
+dht DHT; //Inicializa o sensor como DHT
+
 - Cooler: Sua função principal é fazer a ventilação do objeto a ser verificado pelo sensor
 de temperatura. Fazendo alteração na sua tensão, tem-se um melhor controle da sua
 velocidade.
