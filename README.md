@@ -20,8 +20,10 @@ Nesse projeto iremos utilizar a seguinte lista de materiais:
   4-Protoboard, Transistor, Cabos, Conectores e Fonte USB completam a lista de
     materiais.
 EMBASAMENTO TEÓRICO/PRÁTICO:
+
 - CONSTRUIR O ESQUEMÁTICO DO PROJETO
 IMPLEMENTAÇÃO:
+
 - Arduino: É uma plataforma de desenvolvimento de hardware, microcontrolada
 usando um processador ATMega328 e sendo de código aberto, que em termos práticos, o
 Arduino é um pequeno computador em que é possível se interagir com o ambiente.
