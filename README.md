@@ -98,3 +98,4 @@ soquete do processador e o sensor de temperatura. Isso reduziria o tamanho do pr
 aplicação.
 Usaremos uma comunicação Bluetooth para passar as informações ao supervisório, tudo isso
 projetado em nossa placa.
+
