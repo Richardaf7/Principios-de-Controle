@@ -133,3 +133,4 @@ aplicação.
 Usaremos uma comunicação Bluetooth para passar as informações ao supervisório, tudo isso
 projetado em nossa placa.
 
+
