@@ -73,6 +73,18 @@ Sensor: DHT11, permitindo fazermos a leitura da temperatura para ser controlada.
 #define dhtpin A1
 DHT.read11(dhtpin); //lê as informações do sensor
 
+TÉCNICA DE CONTROLE ON-OFF:
+Conceito: O atuador tem somente duas posições fixas (Ligado / Desligado). A principal vantagem é sua simplicidade e sua desvantagem é a falta de precisão e linearidade.
+
+TÉCNICA DE CONTROLE PID:
+Conceito: Consiste em calcular um valor de atuação sobre o processo a partir das informações do valor desejado e do valor atual da variável do processo. Esse valor de atuação sobre o processo é transformado em um sinal adequado ao atuaddorutilizado (Válvula,  motor, relé), e deve garantir um controle estável e preciso.
+
+- P = Proporcional = Correção proporcional ao erro
+- I = Integral = Correção proporcional ao produto erro*tempo
+- D = Derivativa = Correção proporcional à taxa de variação do erro.
+
+
+
 CONCLUSÃO:
   
   O projeto de Sensor de Temperatura, tem aplicações bem específicas e que não exija um
