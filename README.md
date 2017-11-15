@@ -20,6 +20,12 @@ Nesse projeto iremos utilizar a seguinte lista de materiais:
   4 - Protoboard, Transistor, Cabos, Conectores e Fonte USB completam a lista de
     materiais.
     
+   ![capturar](https://user-images.githubusercontent.com/33470518/32812351-eef15100-c97a-11e7-92de-84e06cd545ff.PNG)
+   
+   *Protótipo Final do Controlador de Temperatura*
+   
+
+    
 **EMBASAMENTO TEÓRICO/PRÁTICO:**
 
 **TÉCNICA DE CONTROLE ON-OFF:**
