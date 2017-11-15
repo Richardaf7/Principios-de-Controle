@@ -1,4 +1,4 @@
-INTRODUÇÃO:
+**INTRODUÇÃO:**
 
   O projeto tem o objetivo geral de controlar a temperatura de qualquer coisa de forma
 inteligente, seja: um espaço físico, a temperatura de um motor a combustão, um refrigerador,
@@ -20,25 +20,30 @@ Nesse projeto iremos utilizar a seguinte lista de materiais:
   4 - Protoboard, Transistor, Cabos, Conectores e Fonte USB completam a lista de
     materiais.
     
-EMBASAMENTO TEÓRICO/PRÁTICO:
-TÉCNICA DE CONTROLE ON-OFF:
+**EMBASAMENTO TEÓRICO/PRÁTICO:
+
+**TÉCNICA DE CONTROLE ON-OFF:
+
 Conceito: O atuador tem somente duas posições fixas (Ligado / Desligado). A principal vantagem é sua simplicidade e sua desvantagem é a falta de precisão e linearidade.
 
 
-TÉCNICA DE CONTROLE PID:
+**TÉCNICA DE CONTROLE PID:
+
 Conceito: Consiste em calcular um valor de atuação sobre o processo a partir das informações do valor desejado e do valor atual da variável do processo. Esse valor de atuação sobre o processo é transformado em um sinal adequado ao atuaddorutilizado (Válvula,  motor, relé), e deve garantir um controle estável e preciso.
 
 - P = Proporcional = Correção proporcional ao erro
 - I = Integral = Correção proporcional ao produto erro*tempo
 - D = Derivativa = Correção proporcional à taxa de variação do erro.
 
-Ação de controle proporcional:
+**Ação de controle proporcional:
+
 A correção a ser aplicada ao processo deve crescer na proporção que cresce o erro entre o valor real e o desejado.
 Equação: u(t) = Kpr x e(t) ou Kpr = U(s) / E(s)
 onde: Kpr = Ganho proporcional
 Função de transferência do controlador: Gc(s) = Kpr
 
-Ação de controle proporcional + integral:
+**Ação de controle proporcional + integral:
+
 Ação integral: Consiste em uma resposta na saída do controlador que é proporcional à amplitude e duração do desvio. Erros pequenos, mas existem há muito tempo, requerem correção mais intensa.
 Ação proporcional + integral: A ação integral não é usada isoladamente. Sempre vem em conjunto com a ação proporcional. A ação integral tem o efeito de eliminar o desvio caracteristico de um controle proporcional.
 Equação: u(t) = Kpr*e(t) + Ki*(Integral)e(t)dt  onde: Ki = ganho integral
@@ -46,7 +51,8 @@ Equação: u(t) = Kpr*e(t) + Ki*(Integral)e(t)dt  onde: Ki = ganho integral
 Função de transferência do controlador: Gc(s) = U(s)/E(s) = Kpr + Ki/s = (Kprs + Ki)/s
                                      ou ainda = Gc(s) = {Kpr*(s + Ki/Kpr)]/s
                                      
-Ação de controle proporcional + derivativa:
+**Ação de controle proporcional + derivativa:
+
 Ação derivativa: Consiste em uma resposta na saída do controlador que é proporcional à taxa de variação do desvio. Se o erro está variando muito rápido, esta taxa de variação deve ser reduzida para evitar oscilações.
 Ação proporcional + derivativa: A ação derivativa não é utilizada isoladamente. Sempre vem em conjunto com a çãao proporcional. A ação derivativa tem o efeito de re duzir a velocidade das variações de PV, evitando que se eleve ou reduza rapidamente.
 Equação: u(t) = Kpr*e(t) + Kd*(d e(t)/dt) onde Kd = Ganho derivativo
@@ -55,14 +61,14 @@ Função de transferência do controlador: Gc(s) = U(s)/E(s) = Kpr + Kds = Kd[s 
                               ou ainda: Gc(s) = Kpr[1 + (Kd / Kpr)s] = Kpr[1 + Tds]
                               onde: 1/Td = (Kpr/Kd) ou Td = (Kd/Kpr) = Constante de tempo derivativa.
 
-Esquemático do projeto:
+**ESQUEMÁTICO DO PROJETO:
 
  Foram usadas portas analógicas e digitais do arduino para o sensor e atuador,
 respectivamente, porém para o atuador, a porta está em modo pwm. Na parte da
 alimentação foi usada a porta de 5V para o sensor e o cooler e um GND comum para
 todos.
 
-IMPLEMENTAÇÃO:
+**IMPLEMENTAÇÃO:
 
 - Arduino: É uma plataforma de desenvolvimento de hardware, microcontrolada,
 usando um processador ATMega328 e sendo de código aberto, que em termos práticos, o
@@ -86,7 +92,7 @@ desejada.
       dht DHT; //Inicializa o sensor como DHT
 
 
-- Cooler: Sua função principal é fazer a ventilação do objeto a ser verificado pelo sensor
+*- Cooler:* Sua função principal é fazer a ventilação do objeto a ser verificado pelo sensor
 de temperatura. Fazendo alteração na sua tensão, tem-se um melhor controle da sua
 velocidade.
 
@@ -98,7 +104,7 @@ velocidade.
       da variável rotacao
       }
 
-- Fonte USB: Alimentação do nosso projeto em si.
+*- Fonte USB:* Alimentação do nosso projeto em si.
 - Encoder: Elementos ou equipamentos eletromecânicos para conversão de
 movimentos rotativos ou lineares em pulsos elétricos de onda quadrada (TTL). Mais
 precisamente usaremos para obter a função de transferência.
@@ -106,7 +112,7 @@ Sensor: DHT11, permitindo fazermos a leitura da temperatura para ser controlada.
 #define dhtpin A1
 DHT.read11(dhtpin); //lê as informações do sensor
 
-CONCLUSÃO:
+**CONCLUSÃO:
   
   O projeto de Sensor de Temperatura, tem aplicações bem específicas e que não exija um
 alto nível de precisão, como um forno industrial ou até mesmo um motor a combustão (motor
@@ -121,7 +127,7 @@ danos irreparáveis. Sendo assim, nosso projeto pode ser vendido como soluções
 exijam um monitoramento de temperatura, pois além do sensor, venderíamos toda a plataforma e
 sistema a ser aplicado.
 
-- O QUE SERIA NECESSÁRIO MELHORAR NO SEU PROJETO PARA QUE ISSO
+**- O QUE SERIA NECESSÁRIO MELHORAR NO SEU PROJETO PARA QUE ISSO
 OCORRA?
 
   Dentro do nosso protótipo, usamos a plataforma Arduíno com Microcontrolador ATMega328 e
