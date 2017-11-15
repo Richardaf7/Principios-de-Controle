@@ -1,6 +1,6 @@
 **INTRODUÇÃO:**
 
-  O projeto tem o objetivo geral de controlar a temperatura de qualquer coisa de forma
+  O projeto tem o objetivo geral de controlar a temperatura de qualquer objeto ou ambiente de forma
 inteligente, seja: um espaço físico, a temperatura de um motor a combustão, um refrigerador,
 um forno etc.
   Muitos sistemas de controle de temperatura são mecânicos e sem inteligência, como é
@@ -14,8 +14,8 @@ pode, junto com outros dados obtidos por outros sensores, mostrar a quem conduz 
 ou aos fabricantes o melhor rendimento do motor.
 
 Nesse projeto iremos utilizar a seguinte lista de materiais:
-  1 - Cooler, como função de atuador;
-  2 - Sensor de temperatura (DHT11) e encoder do cooler;
+  1 - Cooler, como função de atuador e encoder interno;
+  2 - Sensor de temperatura (DHT11);
   3 - ATMega328 (Arduíno UNO), como controlador;
   4 - Protoboard, Transistor, Cabos, Conectores e Fonte USB completam a lista de
     materiais.
@@ -35,7 +35,7 @@ Conceito: O atuador tem somente duas posições fixas (Ligado / Desligado). A pr
 
 **TÉCNICA DE CONTROLE PID:**
 
-Conceito: Consiste em calcular um valor de atuação sobre o processo a partir das informações do valor desejado e do valor atual da variável do processo. Esse valor de atuação sobre o processo é transformado em um sinal adequado ao atuaddorutilizado (Válvula,  motor, relé), e deve garantir um controle estável e preciso.
+Conceito: Consiste em calcular um valor de atuação sobre o processo a partir das informações do valor desejado e do valor atual da variável do processo. Esse valor de atuação sobre o processo é transformado em um sinal adequado ao atuador utilizado (Válvula,  motor, relé), e deve garantir um controle estável e preciso.
 
 - P = Proporcional = Correção proporcional ao erro
 - I = Integral = Correção proporcional ao produto erro*tempo
@@ -50,7 +50,8 @@ Função de transferência do controlador: Gc(s) = Kpr
 
 **Ação de controle proporcional + integral:**
 
-Ação integral: Consiste em uma resposta na saída do controlador que é proporcional à amplitude e duração do desvio. Erros pequenos, mas existem há muito tempo, requerem correção mais intensa.
+Ação integral: Consiste em uma resposta na saída do controlador que é proporcional à amplitude e duração do desvio. 
+Erros pequenos, mas existem há muito tempo, requerem correção mais intensa.
 Ação proporcional + integral: A ação integral não é usada isoladamente. Sempre vem em conjunto com a ação proporcional. A ação integral tem o efeito de eliminar o desvio caracteristico de um controle proporcional.
 Equação: u(t) = Kpr*e(t) + Ki*(Integral)e(t)dt  onde: Ki = ganho integral
          U(s) = Kpr*E(s) + Ki*E(s)/s
