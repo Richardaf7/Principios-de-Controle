@@ -8,9 +8,9 @@ int Sp = 25;
 int Kp = 16;
 int Ki = 5;
 dht DHT; //Inicializa o sensor como DHT
-int T_atual = millis();
-int T_anterior = T_atual;
-int dt = T_atual - T_anterior;
+int T_atual = 0;
+int T_anterior;
+int dt;
 int P;
 
 void setup()
@@ -40,7 +40,9 @@ void loop()
       }
       
       delay(500); //Delay de tres segundos entre as leituras da informação
-
+      int T_anterior = T_atual;
+      int T_atual = millis();
+      int dt = T_atual - T_anterior;
 }
 
 void onVentilador ()
