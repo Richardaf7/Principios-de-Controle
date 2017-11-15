@@ -69,6 +69,8 @@ Função de transferência do controlador: Gc(s) = U(s)/E(s) = Kpr + Kds = Kd[s 
 
 **ESQUEMÁTICO DO PROJETO:**
 
+![capturar3](https://user-images.githubusercontent.com/33470518/32812826-60e2b180-c97d-11e7-95fa-f5228a2784ba.PNG)
+
  Foram usadas portas analógicas e digitais do arduino para o sensor e atuador,
 respectivamente, porém para o atuador, a porta está em modo pwm. Na parte da
 alimentação foi usada a porta de 5V para o sensor e o cooler e um GND comum para
