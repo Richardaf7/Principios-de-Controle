@@ -74,6 +74,10 @@ respectivamente, porém para o atuador, a porta está em modo pwm. Na parte da
 alimentação foi usada a porta de 5V para o sensor e o cooler e um GND comum para
 todos.
 
+![capturar 2](https://user-images.githubusercontent.com/33470518/32812561-141203ac-c97c-11e7-9d7c-51e0f9f45d54.PNG)
+
+*Fluxograma Baseado na Primeira Lógica de Programação*
+
 **IMPLEMENTAÇÃO:**
 
 - Arduino: É uma plataforma de desenvolvimento de hardware, microcontrolada,
