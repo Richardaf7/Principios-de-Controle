@@ -1,9 +1,9 @@
 #include <dht.h> //Inclusão da biblioteca do sensor de temperatura
-#define dhtpin A1 // pino a1 como leitor de temperatura do sensor
-#define vent 9 // pino 9 como clock do pwn do ventilador
-float Temperatura = 0; // variavel que armazena temperatura do sensor 
+#define dhtpin A1 // Pino a1 como leitor de temperatura do sensor
+#define vent 9 // Pino 9 como clock do pwn do ventilador
+float Temperatura = 0; // Variavel que armazena temperatura do sensor 
 float Erro;
-int rotacao = 0; // variavel que armazena a rotacao do motor
+int rotacao = 0; // Variável que armazena a rotacao do motor
 int Sp = 25;
 int Kp = 16;
 dht DHT; //Inicializa o sensor como DHT
