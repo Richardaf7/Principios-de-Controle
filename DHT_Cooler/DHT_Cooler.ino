@@ -7,6 +7,9 @@ int rotacao = 0; // variavel que armazena a rotacao do motor
 int Sp = 25;
 int Kp = 16;
 dht DHT; //Inicializa o sensor como DHT
+int T_atual = millis();
+int T_anterior = T_atual;
+int dt = T_atual - T_anterior;
  
 void setup()
 {
