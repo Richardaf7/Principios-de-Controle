@@ -5,6 +5,7 @@ float Temperatura = 0; // variavel que armazena temperatura do sensor
 float Erro;
 float Erro_Ant;
 float DErro;
+float medicao;
 int rotacao = 0; // variavel que armazena a rotacao do motor
 int Sp = 25;
 int Kp = 16;
@@ -57,6 +58,10 @@ int PI = P+I;
 rotacao = 100 - (PI);
 constrain(rotacao, 0, 255);
 analogWrite (vent,rotacao);
+
+Erro_Ant = Erro;
+Erro = Sp - medicao;
+DErro = Erro - Erro_Ant;
 
 }
 
