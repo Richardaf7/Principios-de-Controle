@@ -3,6 +3,8 @@
 #define vent 9 // pino 9 como clock do pwn do ventilador
 float Temperatura = 0; // variavel que armazena temperatura do sensor 
 float Erro;
+float Erro_Ant;
+float DErro;
 int rotacao = 0; // variavel que armazena a rotacao do motor
 int Sp = 25;
 int Kp = 16;
