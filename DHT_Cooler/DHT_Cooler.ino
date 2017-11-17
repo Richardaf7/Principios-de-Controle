@@ -6,7 +6,7 @@ float Erro;
 float Erro_Ant;
 float DErro;
 int rotacao = 0; // variavel que armazena a rotacao do motor
-int Sp = 25;
+int SP = 25;
 int Kp = 16;
 int Ki = 5;
 dht DHT; //Inicializa o sensor como DHT
@@ -31,7 +31,7 @@ void loop()
       Serial.print(Temperatura); // print serial variavel temperatura
       Serial.println(" Celsius "); // print celsius no serial
 
-      if (Temperatura >= Sp) // entra na condicao se a temperatua > Stop Point 
+      if (Temperatura >= SP) // entra na condicao se a temperatua > Stop Point 
       {
         onVentilador(); // inicia a função de ligar o ventilador      
       }
