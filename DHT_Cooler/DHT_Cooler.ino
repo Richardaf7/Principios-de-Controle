@@ -42,14 +42,17 @@ void loop()
       }
       
       delay(500); //Delay de tres segundos entre as leituras da informação
-      int T_anterior = T_atual;
-      int T_atual = millis();
-      int dt = T_atual - T_anterior;
+      T_anterior = T_atual;
+      T_atual = millis();
+      dt = T_atual - T_anterior;
 }
 
 void onVentilador ()
 {
-
+Erro_Ant = Erro;
+Erro = Sp - Teperatura;
+DErro = Erro - Erro_Ant;
+      
 Erro = SP - Temperatura;
 P = (Erro*Kp);
 I += Ki * Erro * dt;
@@ -57,10 +60,6 @@ int PI = P+I;
 rotacao = 100 - (PI);
 constrain(rotacao, 0, 255);
 analogWrite (vent,rotacao);
-
-Erro_Ant = Erro;
-Erro = Sp - Teperatura;
-DErro = Erro - Erro_Ant;
 
 }
 
