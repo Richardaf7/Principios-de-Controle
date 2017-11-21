@@ -125,6 +125,8 @@ Sensor: DHT11, permitindo fazermos a leitura da temperatura para ser controlada.
 #define dhtpin A1
 DHT.read11(dhtpin); //lê as informações do sensor
 
+*Código Atualizado*: [Código Atualizado para a NP2] (https://github.com/Richardaf7/Principios-de-Controle/blob/master/DHT_Cooler/DHT_Cooler.ino)
+
 **CONCLUSÃO:**
   
   O projeto de Sensor de Temperatura, tem aplicações bem específicas e que não exija um
