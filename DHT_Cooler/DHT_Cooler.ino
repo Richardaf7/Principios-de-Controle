@@ -55,8 +55,8 @@ DErro = Erro - Erro_Ant;
       
 Erro = SP - Temperatura;
 P = (Erro*Kp);
-I += Ki * Erro * dt;
-int PI = P+I;
+int I + = Ki * Erro * dt;
+int PI = P + I;
 rotacao = 100 - (PI);
 constrain(rotacao, 0, 255);
 analogWrite (vent,rotacao);
