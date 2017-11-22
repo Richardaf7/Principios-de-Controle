@@ -13,12 +13,11 @@ veículos por um sistema inteligente que monitora em tempo real a temperatura do
 pode, junto com outros dados obtidos por outros sensores, mostrar a quem conduz os veículos
 ou aos fabricantes o melhor rendimento do motor.
 
-Nesse projeto iremos utilizar a seguinte lista de materiais:
-  1 - Cooler, como função de atuador e encoder interno;
-  2 - Sensor de temperatura (DHT11);
-  3 - ATMega328 (Arduíno UNO), como controlador;
-  4 - Protoboard, Transistor, Cabos, Conectores e Fonte USB completam a lista de
-    materiais.
+Nesse projeto iremos utilizar a seguinte lista de materiais: 
+1. Cooler, como função de atuador e encoder interno; 
+2. Sensor de temperatura (DHT11); 
+3. ATMega328 (Arduíno UNO), como controlador; 
+4. Protoboard, Transistor, Cabos, Conectores e Fonte USB completam a lista de materiais. 
     
    ![capturar](https://user-images.githubusercontent.com/33470518/32812351-eef15100-c97a-11e7-92de-84e06cd545ff.PNG)
    
