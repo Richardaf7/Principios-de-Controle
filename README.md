@@ -37,7 +37,7 @@ Conceito: O atuador tem somente duas posições fixas (Ligado / Desligado). A pr
 Conceito: Consiste em calcular um valor de atuação sobre o processo a partir das informações do valor desejado e do valor atual da variável do processo. Esse valor de atuação sobre o processo é transformado em um sinal adequado ao atuador utilizado (Válvula,  motor, relé), e deve garantir um controle estável e preciso.
 
 - P = Proporcional = Correção proporcional ao erro
-- I = Integral = Correção proporcional ao produto erro*tempo
+- I = Integral = Correção proporcional ao produto (erro*tempo)
 - D = Derivativa = Correção proporcional à taxa de variação do erro.
 
 **Ação de controle proporcional:**
