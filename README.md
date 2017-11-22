@@ -146,11 +146,11 @@ sistema a ser aplicado.
 OCORRA?**
 
   Dentro do nosso protótipo, usamos a plataforma Arduíno com Microcontrolador ATMega328 e
-um protoboard para ajudar nas ligações, porém, para colocarmos nosso produto disponível, será
+um protoboard para ajudar nas ligações, porém, para colocarmos nossa produto disponível, será
 necessário projetarmos nosso própria placa com as devidas entrada dos componentes, incluindo o
 soquete do processador e o sensor de temperatura. Isso reduziria o tamanho do projeto para facilitar a
 aplicação.
-Usaremos uma comunicação Bluetooth para passar as informações ao supervisório, tudo isso
+  Usaremos uma comunicação Bluetooth para passar as informações ao supervisório, tudo isso
 projetado em nossa placa.
 
 
