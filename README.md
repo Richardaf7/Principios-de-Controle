@@ -32,6 +32,9 @@ Nesse projeto iremos utilizar a seguinte lista de materiais:
 
 Conceito: O atuador tem somente duas posições fixas (Ligado / Desligado). A principal vantagem é sua simplicidade e sua desvantagem é a falta de precisão e linearidade.
 
+![malha de controle](https://user-images.githubusercontent.com/33470518/33191454-29c69960-d098-11e7-8fcc-e674b8f01315.PNG)
+
+*Malha de Controle do Sensor de Temperatura*
 
 **TÉCNICA DE CONTROLE PID:**
 
