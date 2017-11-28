@@ -145,6 +145,10 @@ danos irreparáveis. Sendo assim, nosso projeto pode ser vendido como soluções
 exijam um monitoramento de temperatura, pois além do sensor, venderíamos toda a plataforma e
 sistema a ser aplicado.
 
+
+*Resultados Obtidos com o projeto*
+![whatsapp image 2017-11-28 at 17 13 03](https://user-images.githubusercontent.com/33470518/33340170-83ee23e0-d462-11e7-8806-c85af224937b.jpeg)
+
 **- O QUE SERIA NECESSÁRIO MELHORAR NO SEU PROJETO PARA QUE ISSO
 OCORRA?**
 
