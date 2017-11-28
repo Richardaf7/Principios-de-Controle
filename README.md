@@ -64,7 +64,7 @@ Função de transferência do controlador: Gc(s) = U(s)/E(s) = Kpr + Ki/s = (Kpr
 **Ação de controle proporcional + derivativa:**
 
 Ação derivativa: Consiste em uma resposta na saída do controlador que é proporcional à taxa de variação do desvio. Se o erro está variando muito rápido, esta taxa de variação deve ser reduzida para evitar oscilações.
-Ação proporcional + derivativa: A ação derivativa não é utilizada isoladamente. Sempre vem em conjunto com a çãao proporcional. A ação derivativa tem o efeito de reduzir a velocidade das variações de PV, evitando que se eleve ou reduza rapidamente.
+Ação proporcional + derivativa: A ação derivativa não é utilizada isoladamente. Sempre vem em conjunto com a çãao proporcional. A ação derivativa tem o efeito de reduzir a velocidade da taxa de variação do erro, evitando que se eleve ou reduza rapidamente.
 Equação: u(t) = Kpr*e(t) + Kd*(d e(t)/dt) onde Kd = Ganho derivativo
          U(s) = Kpr*E(s) + Kds*E(s)
 Função de transferência do controlador: Gc(s) = U(s)/E(s) = Kpr + Kds = Kd[s + (Kpr/Kd)] = Kd [s+ (1/Td)]
