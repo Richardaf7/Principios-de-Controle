@@ -70,6 +70,9 @@ Equação: u(t) = Kpr*e(t) + Kd*(d e(t)/dt) onde Kd = Ganho derivativo
 Função de transferência do controlador: Gc(s) = U(s)/E(s) = Kpr + Kds = Kd[s + (Kpr/Kd)] = Kd [s+ (1/Td)]
                               ou ainda: Gc(s) = Kpr[1 + (Kd / Kpr)s] = Kpr[1 + Tds]
                               onde: 1/Td = (Kpr/Kd) ou Td = (Kd/Kpr) = Constante de tempo derivativa.
+                              
+
+De primeira instância, foi definido um Kp =  10, mas por experimentação conjunta com o Ki e o KD, elevamos o Kp = 18, teve uma melhor resposta com o Erro. Com base de tester o Ki que teve um melhor comportamento foi de .03999, com elevações bruscas de temperatura, ele eleva rapidamente a rotação do ventilador levando em consideração o loop do programa, por fim um Kd = 30 para fim de amortização.
 
 **ESQUEMÁTICO DO PROJETO:**
 
