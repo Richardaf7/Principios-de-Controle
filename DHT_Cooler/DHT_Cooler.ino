@@ -1,3 +1,5 @@
+/* Código compleo referente ao Projeto do Sensor de Temperatura*/
+
 #include <dht.h> //InclusÃ£o da biblioteca do sensor de temperatura
 #define dhtpin A1 // pino a1 como leitor de temperatura do sensor
 #define vent 9 // pino5 como clock do pwn do ventilador
