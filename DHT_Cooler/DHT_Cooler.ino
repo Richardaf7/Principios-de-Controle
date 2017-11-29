@@ -64,7 +64,7 @@ rotacao = 100 - (PiD);
 //constrain(rotacao, 0, 255);
 if(rotacao >255){
   rotacao = 255;
-  Serial.print(" \tMENOR QUE 255 \n"); // print temperatura no serial
+  Serial.print(" \tMAIOR QUE 255 \n"); // print temperatura no serial
 
   analogWrite (vent,rotacao);
   }
