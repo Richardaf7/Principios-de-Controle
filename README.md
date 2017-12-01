@@ -43,10 +43,6 @@ Nesse projeto iremos utilizar a seguinte lista de materiais:
 
 Conceito: O atuador tem somente duas posições fixas (Ligado / Desligado). A principal vantagem é sua simplicidade e sua desvantagem é a falta de precisão e linearidade.
 
-![malha fechada](https://user-images.githubusercontent.com/33470518/33462475-de511974-d61e-11e7-9f6c-f6fdde48c65f.jpg)
-
-
-*Malha fechada do Controle de Temperatura com PID*
 
 
 **TÉCNICA DE CONTROLE PID:**
@@ -86,6 +82,11 @@ Função de transferência do controlador: Gc(s) = U(s)/E(s) = Kpr + Kds = Kd[s 
                               
 
 De primeira instância, foi definido um Kp =  10, assim tivemos uma mudança menos brusca na variação de rotação do ventilador, pois ele é proporcional ao erro e cada vez que esse erro aumenta ele aumenta a vlocidade, contudo, ao aplicarmos o Ki junto com o Kd, elevamos o Kp para 18, e deixamos que o integrativo do Ki fosse aumentando a velocidade do ventilador de acordo com o loop do programa, assim tivmos uma melhor resposta com o Erro, a cada voidloop o I é incrementado e agindo diretamente com a saída da pwm, assim acionando o ventilador na proporcionalidade exata de rotaçao para que haja a diminuição da temperatura do ambiente. Com base de tester o Ki que teve um melhor comportamento foi de .03999, com elevações bruscas de temperatura, ele eleva rapidamente a rotação do ventilador levando em consideração o loop do programa, por fim um Kd = 30 para fim de amortização.
+
+![pid controle de temperatura](https://user-images.githubusercontent.com/33470518/33487293-dd60ef38-d693-11e7-97f7-37598af1180f.jpg)
+
+*Malha fechada do Controle de Temperatura com PID*
+
 
 **ESQUEMÁTICO DO PROJETO:**
 
