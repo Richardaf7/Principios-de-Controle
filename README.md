@@ -1,3 +1,15 @@
+**PROJETO DO CONTROLE DE TEMPERATURA**
+
+**AUTORES**:
+
+
+*Gabriel Souza, 
+Kassio Kennedy, 
+Richardson Freitas, 
+Siedno Sousa, 
+Tairone Alves.*
+
+
 **INTRODUÇÃO:**
 
   O projeto tem o objetivo geral de controlar a temperatura de qualquer objeto ou ambiente de forma
@@ -32,9 +44,6 @@ Nesse projeto iremos utilizar a seguinte lista de materiais:
 
 Conceito: O atuador tem somente duas posições fixas (Ligado / Desligado). A principal vantagem é sua simplicidade e sua desvantagem é a falta de precisão e linearidade.
 
-![malha de controle](https://user-images.githubusercontent.com/33470518/33191454-29c69960-d098-11e7-8fcc-e674b8f01315.PNG)
-
-*Malha de Controle do Sensor de Temperatura*
 
 **TÉCNICA DE CONTROLE PID:**
 
