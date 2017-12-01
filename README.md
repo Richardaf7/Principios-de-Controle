@@ -34,8 +34,7 @@ Nesse projeto iremos utilizar a seguinte lista de materiais:
    ![capturar](https://user-images.githubusercontent.com/33470518/32812351-eef15100-c97a-11e7-92de-84e06cd545ff.PNG)
    
    *Protótipo Final do Controlador de Temperatura*
-   
-
+ 
     
 
 **EMBASAMENTO TEÓRICO/PRÁTICO:**
@@ -43,6 +42,11 @@ Nesse projeto iremos utilizar a seguinte lista de materiais:
 **TÉCNICA DE CONTROLE ON-OFF:**
 
 Conceito: O atuador tem somente duas posições fixas (Ligado / Desligado). A principal vantagem é sua simplicidade e sua desvantagem é a falta de precisão e linearidade.
+
+![malha fechada](https://user-images.githubusercontent.com/33470518/33462475-de511974-d61e-11e7-9f6c-f6fdde48c65f.jpg)
+
+
+*Malha fechada do Controle de Temperatura com PID*
 
 
 **TÉCNICA DE CONTROLE PID:**
