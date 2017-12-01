@@ -85,7 +85,7 @@ Função de transferência do controlador: Gc(s) = U(s)/E(s) = Kpr + Kds = Kd[s 
                               onde: 1/Td = (Kpr/Kd) ou Td = (Kd/Kpr) = Constante de tempo derivativa.
                               
 
-De primeira instância, foi definido um Kp =  10, mas por experimentação conjunta com o Ki e o KD, elevamos o Kp = 18, teve uma melhor resposta com o Erro. Com base de tester o Ki que teve um melhor comportamento foi de .03999, com elevações bruscas de temperatura, ele eleva rapidamente a rotação do ventilador levando em consideração o loop do programa, por fim um Kd = 30 para fim de amortização.
+De primeira instância, foi definido um Kp =  10, assim tivemos uma mudança menos brusca na variação de rotação do ventilador, pois ele é proporcional ao erro e cada vez que esse erro aumenta ele aumenta a vlocidade, contudo, ao aplicarmos o Ki junto com o Kd, elevamos o Kp para 18, e deixamos que o integrativo do Ki fosse aumentando a velocidade do ventilador de acordo com o loop do programa, assim tivmos uma melhor resposta com o Erro, a cada voidloop o I é incrementado e agindo diretamente com a saída da pwm, assim acionando o ventilador na proporcionalidade exata de rotaçao para que haja a diminuição da temperatura do ambiente. Com base de tester o Ki que teve um melhor comportamento foi de .03999, com elevações bruscas de temperatura, ele eleva rapidamente a rotação do ventilador levando em consideração o loop do programa, por fim um Kd = 30 para fim de amortização.
 
 **ESQUEMÁTICO DO PROJETO:**
 
